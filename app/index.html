@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <button class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="logo__mobile" href="#">
+          <img src="images/logo-mobile.svg" alt="">
+        </a>
+        <nav class="menu">
+          <a class="menu__item" href="#">REVIEWS</a>
+          <a class="menu__item" href="#">SHIPPING AND PAYMENT</a>
+          <a class="menu__item" href="#">WHOLESALE</a>
+          <a class="menu__item" href="#">BLOG</a>
+          <a class="menu__item" href="#">CONTACTS</a>
+        </nav>
+        <div class="header__usernav">
+          <a class="header__usernav-basket" href="#">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_195_2551)">
+                <path
+                  d="M8 23.6667C9.10457 23.6667 10 22.7713 10 21.6667C10 20.5621 9.10457 19.6667 8 19.6667C6.89543 19.6667 6 20.5621 6 21.6667C6 22.7713 6.89543 23.6667 8 23.6667Z"
+                  stroke="white" stroke-width="1.59292" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20 23.6667C21.1046 23.6667 22 22.7713 22 21.6667C22 20.5621 21.1046 19.6667 20 19.6667C18.8954 19.6667 18 20.5621 18 21.6667C18 22.7713 18.8954 23.6667 20 23.6667Z"
+                  stroke="white" stroke-width="1.59292" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M5.67 6.66669H23L21.32 15.0567C21.2286 15.5171 20.9781 15.9306 20.6125 16.225C20.2468 16.5193 19.7893 16.6757 19.32 16.6667H8.75C8.26168 16.6708 7.78873 16.4962 7.42031 16.1756C7.05189 15.8551 6.81347 15.4109 6.75 14.9267L5.23 3.40669C5.16697 2.92592 4.93142 2.48443 4.5672 2.16435C4.20298 1.84428 3.73488 1.66742 3.25 1.66669H1"
+                  stroke="white" stroke-width="1.59292" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_195_2551">
+                  <rect width="24" height="24" fill="white" transform="translate(0 0.666687)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="header__usernav-num">1</span>
+          </a>
+          <a class="header__usernav-instagram" href="#">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_195_2542)">
+                <path
+                  d="M11.2165 22.0004C11.1437 22.0004 11.0708 22.0004 10.9975 22C9.27303 22.0042 7.67966 21.9604 6.1301 21.8661C4.70944 21.7797 3.41266 21.2887 2.37973 20.4464C1.38306 19.6337 0.702438 18.5348 0.356842 17.1807C0.0560608 16.0017 0.0401154 14.8444 0.0248413 13.725C0.0137634 12.9219 0.00234985 11.9702 0 11.0024C0.00234985 10.0306 0.0137634 9.07886 0.0248413 8.27571C0.0401154 7.15651 0.0560608 5.99921 0.356842 4.82008C0.702438 3.4659 1.38306 2.367 2.37973 1.55429C3.41266 0.712036 4.70944 0.221084 6.13026 0.134643C7.67982 0.0404809 9.27353 -0.00349495 11.0017 0.00070122C12.7266 -0.00299141 14.3195 0.0404809 15.8691 0.134643C17.2897 0.221084 18.5865 0.712036 19.6194 1.55429C20.6163 2.367 21.2967 3.4659 21.6423 4.82008C21.9431 5.99904 21.959 7.15651 21.9743 8.27571C21.9854 9.07886 21.997 10.0306 21.9992 10.9984V11.0024C21.997 11.9702 21.9854 12.9219 21.9743 13.725C21.959 14.8442 21.9433 16.0015 21.6423 17.1807C21.2967 18.5348 20.6163 19.6337 19.6194 20.4464C18.5865 21.2887 17.2897 21.7797 15.8691 21.8661C14.3851 21.9564 12.8607 22.0004 11.2165 22.0004ZM10.9975 20.2813C12.6939 20.2853 14.2515 20.2425 15.7647 20.1505C16.8389 20.0852 17.7703 19.7366 18.5333 19.1144C19.2386 18.5392 19.7243 17.7456 19.9769 16.7557C20.2274 15.7743 20.2418 14.7205 20.2557 13.7015C20.2666 12.9038 20.2781 11.9588 20.2804 11.0004C20.2781 10.0418 20.2666 9.09699 20.2557 8.29921C20.2418 7.28021 20.2274 6.22647 19.9769 5.2449C19.7243 4.25494 19.2386 3.46136 18.5333 2.88615C17.7703 2.26411 16.8389 1.9155 15.7647 1.8502C14.2515 1.75806 12.6939 1.71559 11.0015 1.71928C9.30542 1.71526 7.74763 1.75806 6.2345 1.8502C5.16028 1.9155 4.2289 2.26411 3.46587 2.88615C2.76057 3.46136 2.27483 4.25494 2.02222 5.2449C1.77179 6.22647 1.75735 7.28005 1.74342 8.29921C1.73251 9.09766 1.7211 10.0431 1.71875 11.0024C1.7211 11.9574 1.73251 12.9031 1.74342 13.7015C1.75735 14.7205 1.77179 15.7743 2.02222 16.7557C2.27483 17.7456 2.76057 18.5392 3.46587 19.1144C4.2289 19.7365 5.16028 20.0851 6.2345 20.1504C7.74763 20.2425 9.30576 20.2855 10.9975 20.2813ZM10.9565 16.3715C7.99504 16.3715 5.58543 13.962 5.58543 11.0004C5.58543 8.03871 7.99504 5.62927 10.9565 5.62927C13.9182 5.62927 16.3276 8.03871 16.3276 11.0004C16.3276 13.962 13.9182 16.3715 10.9565 16.3715ZM10.9565 7.34802C8.9427 7.34802 7.30418 8.98654 7.30418 11.0004C7.30418 13.0142 8.9427 14.6527 10.9565 14.6527C12.9705 14.6527 14.6089 13.0142 14.6089 11.0004C14.6089 8.98654 12.9705 7.34802 10.9565 7.34802ZM16.9292 3.91052C16.2173 3.91052 15.6401 4.48758 15.6401 5.19959C15.6401 5.91159 16.2173 6.48865 16.9292 6.48865C17.6412 6.48865 18.2182 5.91159 18.2182 5.19959C18.2182 4.48758 17.6412 3.91052 16.9292 3.91052Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_195_2542">
+                  <rect width="22" height="22" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header__usernav-phone" href="tel:+18888888888">
+            <p>+1 (888) 888-88-88</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="top">
+      <div class="container">
+        <div class="top__inner">
+          <a class="logo" href="#">
+            <img src="images/logo2.svg" alt="logo image">
+          </a>
+          <div class="top__author">
+            <img src="images/author.jpg" alt="avatar">
+            <div class="top__author-box">
+              <p class="top__author-name">
+                jOHN SMITH
+              </p>
+              <a class="top__author-link" href="#">
+                Ask a question
+                to the director
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top__items-wrapper">
+      <div class="container">
+        <div class="top__items">
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/1.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/2.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/3.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/4.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/5.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/6.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/7.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/8.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/9.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/10.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/11.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/12.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/13.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+          <div class="top__item-wrapper">
+            <a class="top__item" href="#">
+              <img src="images/product/14.png" alt="product image">
+              <p class="top__item-name">
+                KS ES1l
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="top__banner" href="#">
+      Free 1 day shipping within California.
+    </a>
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <div class="product__content">
+            <p class="product__top">
+              In stock
+            </p>
+            <h2 class="product__title">
+              SEGWAY
+              Ninebot
+              Kickscooter
+              MAX
+            </h2>
+            <div class="product__box">
+              <p class="product__box-title">
+                Add an extended warranty from
+                <a href="#">Extend</a>
+              </p>
+              <div class="product__box-items">
+                <div class="product__box-item">
+                  1 Year - $139
+                </div>
+                <div class="product__box-item">
+                  2 Year - $209
+                </div>
+                <div class="product__box-item">
+                  3 Year - $279
+                </div>
+              </div>
+              <div class="product__box-items">
+                <div class="product__price">
+                  <p class="product__price-old">
+                    $1049.99
+                  </p>
+                  <div class="product__price-new">
+                    $949.99
+                  </div>
+                </div>
+                <div class="product__box-info">
+                  Segway Protective
+                  Gear Set as a gift
+                </div>
+                <img src="images/products.png" alt="products image">
+              </div>
+              <div class="product__buttons">
+                <a class="button" href="#">
+                  BUY IT Now
+                </a>
+                <a class="button" href="#">
+                  ADD TO CART
+                </a>
+              </div>
+            </div>
+            <div class="product__partners">
+              <div class="product__partners-box">
+                <p class="product__partners-text">Payment Methods:</p>
+                <p class="product__prequalify-text" href="#">
+                  Starting at $55/mo with
+                </p>
+                <a class="product__prequalify-link" href="#">
+                  . Prequalify now
+                </a>
+              </div>
+
+              <div class="product__partners-items">
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/1.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/2.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/3.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/4.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/5.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/6.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/7.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/8.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/9.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/10.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/11.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/12.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/13.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/14.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/15.svg" alt="">
+                </a>
+                <a class="product__partners-link" href="#">
+                  <img class="product__partners-img" src="images/partners/16.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product__slider">
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+            <div class="product__slider-item">
+              <div class="product__slider-wrapper">
+                <img src="images/slider/1.png" alt="slider image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__benefits">
+          <div class="product__benefits-item">
+            <img class="product__benefits-img" src="images/benefits/1.svg" alt="">
+            <p class="product__benefits-text">
+              Delivery within 1 business day
+            </p>
+          </div>
+          <div class="product__benefits-item">
+            <img class="product__benefits-img" src="images/benefits/2.svg" alt="">
+            <p class="product__benefits-text">
+              Basic 1 year
+              warranty
+            </p>
+          </div>
+          <div class="product__benefits-item">
+            <img class="product__benefits-img" src="images/benefits/3.svg" alt="">
+            <p class="product__benefits-text">
+              After Sales Support
+            </p>
+          </div>
+          <div class="product__benefits-item">
+            <img class="product__benefits-img" src="images/benefits/4.svg" alt="">
+            <p class="product__benefits-text">
+              Up to 40 miles per charge
+            </p>
+          </div>
+        </div>
+        <div class="product__benefits-box">
+          <div class="product__benefits-content">
+            <h5 class="product__benefits-title">
+              Up to 40 miles of range
+              on a single charge
+            </h5>
+            <p class="product__benefits-subtitle">
+              With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the
+              KickScooter MAX
+              allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.
+            </p>
+          </div>
+          <img src="images/benefits-bg.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="video-popup">
+      <div class="container">
+        <div class="video-popup__inner">
+          <div class="video-popup__content">
+            <h3 class="video-popup__title title">
+              Packing List
+            </h3>
+            <div class="video-popup__link-box">
+              <a class="video-popup__link" href="https://www.youtube.com/watch?v=-yz-hLlgR-E" data-fancybox>
+                <img src="images/icons/play.svg" alt="">
+              </a>
+              <p class="video-popup__text">
+                Нет перевода
+              </p>
+            </div>
+          </div>
+          <div class="video-popup__box">
+            <img src="images/video-popup.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="card">
+      <div class="container">
+        <h3 class="card__title title">
+          Accessories
+        </h3>
+        <div class="card__items">
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/1.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              NineboT
+              Engine Speaker
+            </h5>
+            <p class="card-item__text">
+              The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle's
+              accelerator,
+              brake, speed, and other signals
+            </p>
+            <p class="card-item__price">
+              $149.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/2.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Extension
+              Rod
+            </h5>
+            <p class="card-item__text">
+              The Extension Rod helps you to easily maneuver your scooter, so you no longer need to bend over and push
+              it, making it
+              easier to take with you anywhere.
+            </p>
+            <p class="card-item__price">
+              $29.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/3.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway Protective
+              Gear Set
+            </h5>
+            <p class="card-item__text">
+              The curved, streamlined design of the helmet shell, coupled with the thick, high-quality fabrics create a
+              helmet that is
+              stylish, protective and comfortable to wear.
+            </p>
+            <p class="card-item__price">
+              $29.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/4.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Ninebot Leisure
+              Backpack
+            </h5>
+            <p class="card-item__text">
+              The Ninebot leisure backpack adopts a stylish gray-yellow color contrast, adding a trendy accessory to
+              your wardrobe.
+            </p>
+            <p class="card-item__price">
+              $69.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/5.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway External
+              Battery
+            </h5>
+            <p class="card-item__text">
+              It is easy to install and increases the range of the ES1, ES2 & E22 to 27.9, 28 and 27 miles respectively
+              and It also
+              increases the speed
+            </p>
+            <p class="card-item__price">
+              $249.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/6.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Charger
+            </h5>
+            <p class="card-item__text">
+              Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is
+              designed to
+              provide a safe and stable charge anytime, anywhere.
+            </p>
+            <p class="card-item__price">
+              $79.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/7.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Scooter Bag
+            </h5>
+            <p class="card-item__text">
+              Tough EVA material, suitable for the entire Ninebot KickScooter by Segway line. 3L capacity gives you
+              plenty of room to
+              carry your phone, charger, bottled water, and other personal items.
+            </p>
+            <p class="card-item__price">
+              $49.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/card/8.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Phone Holder
+            </h5>
+            <p class="card-item__text">
+              The dual screw, non-slip design offers ultimate security and versatility. The phone holder is applicable
+              to multiple
+              vehicle series.
+            </p>
+            <p class="card-item__price">
+              $29.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img class="card-item__img" src="images/card/9.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Phone Holder
+            </h5>
+            <p class="card-item__text">
+              This scooter seat is designed to work with the MAX. It offers high quality, comfort and safety that is in
+              line with the
+              MAX KickScooter.
+            </p>
+            <p class="card-item__price">
+              $119.99
+            </p>
+            <button class="card-item__add">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- <section class="features">
+      <div class="container">
+        <div class="features__inner">
+          <h3 class="features__title title">
+            IMPRESSIVE FEATURES
+          </h3>
+          <div class="features__items">
+            <div class="features__item">
+              <img src="images/features/1.svg" alt="">
+              <p class="features__item-title">
+                10”
+              </p>
+              <p class="features__item-text">
+                Pneumatic Tires
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/2.svg" alt="">
+              <p class="features__item-title">
+                LED
+              </p>
+              <p class="features__item-text">
+                Front LED Lights
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/3.svg" alt="">
+              <p class="features__item-title">
+                18.6 mph
+              </p>
+              <p class="features__item-text">
+                Max Speed
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/4.svg" alt="">
+              <p class="features__item-title">
+                40.4 Miles
+              </p>
+              <p class="features__item-text">
+                Max Range
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/5.svg" alt="">
+              <p class="features__item-title">
+                20%
+              </p>
+              <p class="features__item-text">
+                Hill Grade
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/6.svg" alt="">
+              <p class="features__item-title">
+                IPX5
+              </p>
+              <p class="features__item-text">
+                Water-Resistant
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/7.svg" alt="">
+              <p class="features__item-title">
+                6H
+              </p>
+              <p class="features__item-text">
+                Fast Charging
+              </p>
+            </div>
+            <div class="features__item">
+              <img src="images/features/1.svg" alt="">
+              <p class="features__item-title">
+                551Wh
+              </p>
+              <p class="features__item-text">
+                Battery
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+           <!-- <section class="characteristics">
+      <div class="container">
+        <h3 class="title">
+          KickScooter overview SEGWAY Ninebot Kickscooter MAX
+        </h3>
+        <div class="characteristics__content">
+          <ul class="characteristics__content-list">
+            <li class="characteristics__list-item">
+              Electronic Throttle •
+            </li>
+            <li class="characteristics__list-item">
+              Bell •
+            </li>
+            <li class="characteristics__list-item">
+              Brake Lewer •
+            </li>
+            <li class="characteristics__list-item">
+              Headlight •
+            </li>
+            <li class="characteristics__list-item">
+              Quick Release Lever •
+            </li>
+            <li class="characteristics__list-item">
+              Folding Mechanism •
+            </li>
+            <li class="characteristics__list-item">
+              Front Fork •
+            </li>
+            <li class="characteristics__list-item">
+              Drum Brake •
+            </li>
+          </ul>
+          <ul class="characteristics__content-list">
+            <li class="characteristics__list-item">
+              Dashboard & Power Button
+            </li>
+            <li class="characteristics__list-item">
+              Stem
+            </li>
+            <li class="characteristics__list-item">
+              Battery Compartment
+            </li>
+            <li class="characteristics__list-item">
+              Порт для зарядки
+            </li>
+            <li class="characteristics__list-item">
+              Charge Port
+            </li>
+            <li class="characteristics__list-item">
+              Kickstand
+            </li>
+            <li class="characteristics__list-item">
+              Rear Fender
+            </li>
+            <li class="characteristics__list-item">
+              Brake Light
+            </li>
+            <li class="characteristics__list-item">
+              Hub Motor
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+    <section class="info-product">
+      <div class="container">
+        <div class="info-product__inner">
+          <h3 class="info-product__title">
+            Smart battery
+            Management system
+            (Smart-BMS)
+          </h3>
+          <p class="info-product__text">
+            The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery
+            durability
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="benefits-item">
+      <img class="benefits-item__img" src="images/benefits-item-bg.jpg" alt="">
+      <div class="benefits-item__content">
+        <h3 class="benefits-item__title">
+          Dual Braking
+          System
+        </h3>
+        <p class="benefits-item__text">
+          Simultaneous mechanical front drum brake and regenerative electric back brake provide both stability and
+          steerability.
+        </p>
+        <p class="benefits-item__text">
+          *IPX5 water resistance
+        </p>
+      </div>
+    </section>
+    <section class="info-product info-product__img">
+      <div class="container">
+        <div class="info-product__inner">
+          <h3 class="info-product__title">
+            Built-In Front
+            LED Light
+          </h3>
+          <p class="info-product__text">
+            Front-facing lights are designed with 2.5w high-brightness LED light to illuminate the path ahead of you and
+            increase
+            your visibility to others around you.
+          </p>
+          <p class="info-product__disclamer">
+            *Disclaimer: for your safety, please try not to ride at night
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="folding-mechanism">
+      <div class="container">
+        <div class="folding-mechanism__inner">
+          <h3 class="title">
+            One-step Folding Mechanism
+          </h3>
+          <p class="folding-mechanism__subtitle">
+            Ninebot KickScooter MAX can be easily folded and carried around in 3 seconds.
+          </p>
+          <img class="folding-mechanism__img" src="images/folding-bg.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="info-product power-recycle">
+      <div class="container">
+        <div class="info-product__inner">
+          <h3 class="info-product__title power-recycle__title">
+            Regenerative Brake for Power Recycle
+          </h3>
+          <p class="info-product__text power-recycle__text">
+            The innovative regenerative brake system turns Ninebot KickScooter MAX into an electric vehicle powered by
+            electricity
+            and recycled energy from riding. Energy will be collected from regenerative braking and distributed when you
+            need a
+            boost.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="fast-charging">
+      <img src="images/fast-charging-bg.jpg" alt="">
+      <div class="fast-charging__content">
+        <h3 class="fast-charging__title">
+          Easy One Cord
+          Fast Charging
+        </h3>
+        <p class="fast-charging__text">
+          The built-in charger lets riders recharge it easily when on the go without having to carry along a bulky
+          charging
+          adapter. 3A fast charge will give Ninebot KickScooter MAX a full charge in 6 hours.
+        </p>
+      </div>
+    </section>
+    <section class="info-product riding-modes">
+      <div class="container">
+        <div class="info-product__inner">
+          <h3 class="info-product__title">
+            3 Riding Modes
+          </h3>
+          <p class="info-product__text ">
+            Eco, Standard, and Sports modes can be directly accessed by the intuitive LED dashboard, which also displays
+            maintenance
+            signals, power levels, Bluetooth connectivity and more.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="manual">
+      <div class="container">
+        <div class="manual__inner">
+          <div class="manual__content">
+            <h3 class="manual__title">
+              DOWNLOAD
+              manual
+            </h3>
+            <div class="manual__box">
+              <div class="manual__box-item">
+                <img class="manual__box-img" src="images/icons/manual-1.svg" alt="">
+                <p class="manual__box-text">
+                  Assembly and
+                  preparation for the trip
+                </p>
+              </div>
+              <div class="manual__box-item">
+                <img class="manual__box-img" src="images/icons/manual-2.svg" alt="">
+                <p class="manual__box-text">
+                  How to charge
+                  a scooter
+                </p>
+              </div>
+              <div class="manual__box-item">
+                <img class="manual__box-img" src="images/icons/manual-3.svg" alt="">
+                <p class="manual__box-text">
+                  How to ride
+                  properly
+                </p>
+              </div>
+            </div>
+            <a class="manual__link" href="#">
+              Download manual
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="specifications">
+      <div class="container">
+        <h3 class="title">
+          compare specifications
+        </h3>
+        <p class="specifications__subtitle">
+          Add model to compare
+        </p>
+        <div class="specifications-slider">
+          <div class="specifications-slider__item">
+            <img class="specifications-slider__item-img" src="images/specifications-slider/1.png" alt="">
+            <h5 class="specifications-slider__item-title">
+              NiNinebot
+              Kickscooter E22
+            </h5>
+            <ul class="specifications-slider__list">
+              <li class="specifications-slider__list-item">
+                Max. speed
+                <span>
+                  20 км/ч
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Range (miles)
+                <span>
+                  22 км
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Battery Capacity
+                <span>
+                  5100 mAh
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Net Weight
+                <span>
+                  13.5 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Payload
+                <span>
+                  25 кг - 100 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Chargin Time
+                <span>
+                  3.5 часа
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Number of Batteries
+                <span>
+                  1 встроенная
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Motor power
+                <span>
+                  Номинальная 300W
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Power Output
+                <span>
+                  71W (0.071kW)
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Max. Incline
+                <span>
+                  15%
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Shock Absorption
+                <span>
+                  ----
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Safety
+                <span>
+                  Задний LED-фонарь
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Atmosphere Light
+                <span>
+                  ----
+                </span>
+              </li>
+            </ul>
+            <p class="specifications-slider__price">
+              $599.99
+            </p>
+            <a class="specifications-slider__item-link" href="#">
+              BUY IT NOW
+            </a>
+          </div>
+          <div class="specifications-slider__item">
+            <img class="specifications-slider__item-img" src="images/specifications-slider/1.png" alt="">
+            <h5 class="specifications-slider__item-title">
+              NiNinebot
+              Kickscooter E22
+            </h5>
+            <ul class="specifications-slider__list">
+              <li class="specifications-slider__list-item">
+                Max. speed
+                <span>
+                  20 км/ч
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Range (miles)
+                <span>
+                  22 км
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Battery Capacity
+                <span>
+                  5100 mAh
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Net Weight
+                <span>
+                  13.5 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Payload
+                <span>
+                  25 кг - 100 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Chargin Time
+                <span>
+                  3.5 часа
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Number of Batteries
+                <span>
+                  1 встроенная
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Motor power
+                <span>
+                  Номинальная 300W
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Power Output
+                <span>
+                  71W (0.071kW)
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Max. Incline
+                <span>
+                  15%
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Shock Absorption
+                <span>
+                  ----
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Safety
+                <span>
+                  Задний LED-фонарь
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Atmosphere Light
+                <span>
+                  ----
+                </span>
+              </li>
+            </ul>
+            <p class="specifications-slider__price">
+              $599.99
+            </p>
+            <a class="specifications-slider__item-link" href="#">
+              BUY IT NOW
+            </a>
+          </div>
+          <div class="specifications-slider__item">
+            <img class="specifications-slider__item-img" src="images/specifications-slider/1.png" alt="">
+            <h5 class="specifications-slider__item-title">
+              NiNinebot
+              Kickscooter E22
+            </h5>
+            <ul class="specifications-slider__list">
+              <li class="specifications-slider__list-item">
+                Max. speed
+                <span>
+                  20 км/ч
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Range (miles)
+                <span>
+                  22 км
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Battery Capacity
+                <span>
+                  5100 mAh
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Net Weight
+                <span>
+                  13.5 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Payload
+                <span>
+                  25 кг - 100 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Chargin Time
+                <span>
+                  3.5 часа
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Number of Batteries
+                <span>
+                  1 встроенная
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Motor power
+                <span>
+                  Номинальная 300W
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Power Output
+                <span>
+                  71W (0.071kW)
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Max. Incline
+                <span>
+                  15%
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Shock Absorption
+                <span>
+                  ----
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Safety
+                <span>
+                  Задний LED-фонарь
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Atmosphere Light
+                <span>
+                  ----
+                </span>
+              </li>
+            </ul>
+            <p class="specifications-slider__price">
+              $599.99
+            </p>
+            <a class="specifications-slider__item-link" href="#">
+              BUY IT NOW
+            </a>
+          </div>
+          <div class="specifications-slider__item">
+            <img class="specifications-slider__item-img" src="images/specifications-slider/1.png" alt="">
+            <h5 class="specifications-slider__item-title">
+              NiNinebot
+              Kickscooter E22
+            </h5>
+            <ul class="specifications-slider__list">
+              <li class="specifications-slider__list-item">
+                Max. speed
+                <span>
+                  20 км/ч
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Range (miles)
+                <span>
+                  22 км
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Battery Capacity
+                <span>
+                  5100 mAh
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Net Weight
+                <span>
+                  13.5 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Payload
+                <span>
+                  25 кг - 100 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Chargin Time
+                <span>
+                  3.5 часа
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Number of Batteries
+                <span>
+                  1 встроенная
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Motor power
+                <span>
+                  Номинальная 300W
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Power Output
+                <span>
+                  71W (0.071kW)
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Max. Incline
+                <span>
+                  15%
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Shock Absorption
+                <span>
+                  ----
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Safety
+                <span>
+                  Задний LED-фонарь
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Atmosphere Light
+                <span>
+                  ----
+                </span>
+              </li>
+            </ul>
+            <p class="specifications-slider__price">
+              $599.99
+            </p>
+            <a class="specifications-slider__item-link" href="#">
+              BUY IT NOW
+            </a>
+          </div>
+          <div class="specifications-slider__item">
+            <img class="specifications-slider__item-img" src="images/specifications-slider/1.png" alt="">
+            <h5 class="specifications-slider__item-title">
+              NiNinebot
+              Kickscooter E22
+            </h5>
+            <ul class="specifications-slider__list">
+              <li class="specifications-slider__list-item">
+                Max. speed
+                <span>
+                  20 км/ч
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Range (miles)
+                <span>
+                  22 км
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Battery Capacity
+                <span>
+                  5100 mAh
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Net Weight
+                <span>
+                  13.5 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Payload
+                <span>
+                  25 кг - 100 кг
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Chargin Time
+                <span>
+                  3.5 часа
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Number of Batteries
+                <span>
+                  1 встроенная
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Motor power
+                <span>
+                  Номинальная 300W
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Power Output
+                <span>
+                  71W (0.071kW)
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Max. Incline
+                <span>
+                  15%
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Shock Absorption
+                <span>
+                  ----
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Safety
+                <span>
+                  Задний LED-фонарь
+                </span>
+              </li>
+              <li class="specifications-slider__list-item">
+                Atmosphere Light
+                <span>
+                  ----
+                </span>
+              </li>
+            </ul>
+            <p class="specifications-slider__price">
+              $599.99
+            </p>
+            <a class="specifications-slider__item-link" href="#">
+              BUY IT NOW
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="protective">
+      <div class="container">
+        <div class="protective__inner">
+          <img src="images/protective-bg.png" alt="">
+          <div class="protective__content">
+            <h3 class="protective__title">
+              Segway Protective
+              Gear Set as a gift
+            </h3>
+            <p class="protective__text">
+              The cost of a protection kit when buying
+              a scooter is $ 0 instead of $ $29.99
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h3 class="title">
+          REviews
+        </h3>
+        <div class="reviews-slider">
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+          <div class="reviews-slider__item">
+            <img src="images/reviews/1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="container">
+        <h3 class="title">
+          Control from your smartphone
+        </h3>
+        <p class="programs__text">
+          You can easily control your Segway electric scooter with your smartphone via Bluetooth. Not being the key to the
+          kickscooter, it will give a signal in case of an attempt to steal. Check the current speed, data on the status of the
+          device's systems or set the speed limit with a few touches.
+          And the skating training program is indispensable for beginners.
+        </p>
+        <div class="programs__inner">
+          <div class="programs__content">
+            <div class="programs__items">
+              <a class="programs__item" href="#">
+        <svg width="49" height="35" viewBox="0 0 49 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_125_1281)">
+            <path
+              d="M16.2476 12.9984H17.748C17.748 9.27539 20.7769 6.24652 24.4999 6.24652V4.74609C19.9498 4.74609 16.2476 8.44832 16.2476 12.9984Z"
+              fill="#CCCCCC" />
+            <path
+              d="M37.5041 25.7527H36.7539V12.9983C36.7539 6.2424 31.2566 0.745117 24.4999 0.745117C17.7432 0.745117 12.2459 6.2424 12.2459 12.9983V25.7519H11.4957C9.97924 25.7519 8.74463 26.9857 8.74463 28.503V34.2549H40.2543V28.503C40.2543 26.9865 39.0205 25.7527 37.5041 25.7527ZM13.7463 12.9983C13.7463 7.06868 18.5702 2.24554 24.4999 2.24554C30.4295 2.24554 35.2535 7.06948 35.2535 12.9983V25.7519H13.7463V12.9983ZM38.7539 29.254H31.2014V30.7544H38.7539V32.7552H10.2459V30.7544H18.298V29.254H10.2459V28.5038C10.2459 27.8144 10.8063 27.2532 11.4965 27.2532H37.5041C38.1935 27.2532 38.7547 27.8136 38.7547 28.5038V29.254H38.7539Z"
+              fill="#CCCCCC" />
+            <path
+              d="M44.3929 5.18164L43.332 6.24251C48.8894 11.8006 48.8894 20.8432 43.332 26.4014L44.3929 27.4622C50.5355 21.3188 50.5355 11.3243 44.3929 5.18164Z"
+              fill="#CCCCCC" />
+            <path
+              d="M41.4456 8.12793L40.3848 9.1888C44.3176 13.1216 44.3176 19.5204 40.3848 23.4532L41.4456 24.5141C45.9629 19.9968 45.9629 12.646 41.4456 8.12793Z"
+              fill="#CCCCCC" />
+            <path
+              d="M5.66783 6.24233L4.60696 5.18066C-1.53565 11.3233 -1.53565 21.3186 4.60696 27.4613L5.66783 26.4004C0.11049 20.843 0.11049 11.7997 5.66783 6.24233Z"
+              fill="#CCCCCC" />
+            <path
+              d="M8.61485 9.1896L7.55398 8.12793C3.03669 12.6452 3.03669 19.9968 7.55398 24.5141L8.61485 23.4532C4.68204 19.5212 4.68204 13.1216 8.61485 9.1896Z"
+              fill="#CCCCCC" />
+            <path
+              d="M26.7505 23.5731V20.0198C27.6609 19.3345 28.251 18.2456 28.251 17.0206C28.251 14.9525 26.568 13.2695 24.4999 13.2695C22.4318 13.2695 20.7488 14.9525 20.7488 17.0206C20.7488 18.2448 21.3389 19.3345 22.2493 20.0198V23.5731H20.499V25.0736H28.5016V23.5731H26.7505ZM25.2501 23.5731H23.7497V20.6972C23.9923 20.7468 24.2429 20.7725 24.4999 20.7725C24.7569 20.7725 25.0075 20.746 25.2501 20.6972V23.5731ZM24.4999 19.272C23.2589 19.272 22.2493 18.2624 22.2493 17.0214C22.2493 15.7804 23.2589 14.7708 24.4999 14.7708C25.7409 14.7708 26.7505 15.7804 26.7505 17.0214C26.7505 18.2624 25.7409 19.272 24.4999 19.272Z"
+              fill="#CCCCCC" />
+            <path d="M21.9994 29.2539H20.499V30.7543H21.9994V29.2539Z" fill="#CCCCCC" />
+            <path d="M29.0014 29.2539H27.501V30.7543H29.0014V29.2539Z" fill="#CCCCCC" />
+            <path d="M25.5009 29.2539H24.0005V30.7543H25.5009V29.2539Z" fill="#CCCCCC" />
+          </g>
+          <defs>
+            <clipPath id="clip0_125_1281">
+              <rect width="49" height="33.5098" fill="white" transform="translate(0 0.745117)" />
+            </clipPath>
+          </defs>
+        </svg>
+
+                Anti-theft
+                protection
+              </a>
+            </div>
+          </div>
+          <img src="images/programs-bg.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="models">
+      <div class="container">
+        <h3 class="title">
+          OTHER MODELS
+        </h3>
+        <p class="models__subtitle">
+          Check out the entire line of Segway scooters
+        </p>
+        <div class="models__items">
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/1.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              NineboT
+              Engine Speaker
+            </h5>
+            <p class="card-item__price">
+              $149.99
+            </p>
+            <button class="card-item__add">
+              SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/2.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Extension
+              Rod
+            </h5>
+            <p class="card-item__price">
+              $29.99
+            </p>
+            <button class="card-item__add">
+              SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/3.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway Protective
+              Gear Set
+            </h5>
+            <p class="card-item__price">
+              $29.99
+            </p>
+            <button class="card-item__add">
+              SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/4.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Ninebot Leisure
+              Backpack
+            </h5>
+            <p class="card-item__price">
+              $69.99
+            </p>
+            <button class="card-item__add">
+              SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/5.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway External
+              Battery
+            </h5>
+            <p class="card-item__price">
+              $249.99
+            </p>
+            <button class="card-item__add">
+            SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/6.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Charger
+            </h5>
+            <p class="card-item__price">
+              $79.99
+            </p>
+            <button class="card-item__add">
+            SEE MORE
+            </button>
+          </div>
+          <div class="card-item">
+            <div class="card-item__box-img">
+              <img src="images/models/7.png" alt="">
+            </div>
+            <h5 class="card-item__title">
+              Segway
+              Scooter Bag
+            </h5>
+            <p class="card-item__price">
+              $49.99
+            </p>
+            <button class="card-item__add">
+              SEE MORE
+            </button>
+          </div>
+          <!-- <div class="card-item__models">
+            <h4 class="card-item__models-title">
+              DIDN'T FIND
+              A MODEL?
+            </h4>
+            <p class="card-item__models-text">
+              Leave your contact details
+              and we will help you with
+              the choice
+            </p>
+            <form class="card-item__models-form" action="#">
+              <input class="card-item__models-input" type="text" placeholder="+7 (___) ___-__-__">
+            </form>
+            <a class="card-item__models-link" href="#">
+              SEND
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+      <!--
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="logo" href="#">
+          <img src="images/logo.svg" alt="logo image">
+        </a>
+        <div class="footer__box">
+          <a class="footer__phone" href="tel:+18887777777">+1 (888) 777-77-77</a>
+          <p class="footer__adress">
+            2637 Fairfax Ave
+            Culver City, CA 90232
+          </p>
+          <p class="footer__copy">
+            Segway California © 2017
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

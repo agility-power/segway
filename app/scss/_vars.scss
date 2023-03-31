@@ -1,0 +1,15 @@
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+%proxima-400{
+  font-family: 'ProximaNova-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%proxima-700{
+font-family: 'ProximaNova-bold', sans-serif;
+  font-weight: 700;
+}
